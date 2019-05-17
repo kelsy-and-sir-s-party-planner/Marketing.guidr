@@ -15,8 +15,50 @@ h1, h2, h3, h4, h5 {
   }
 
   body {
-    display: flex;
-    flex-direction: column;
+    .home-container {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: @bg;
+      
+          @media @mobile {
+              width: 100%;
+              display:flex;
+              flex-direction: column;
+              align-content: center;
+              margin: 0;
+          }
+          
+          #banner{
+            width: 100%;
+            height: 500px;
+            background-attachment: scroll, fixed;
+            background-color: darkgrey;
+            background-image: url("../images/audience-celebration.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1{
+              -webkit-text-stroke: 1px;
+              -webkit-text-stroke-color: white;
+              margin-top: 40px;
+            }
+
+            img{
+              margin-top: 20px;
+              padding: 0 750px;
+              
+            }
+          }
+
+          
+
   }
+}
 
   
