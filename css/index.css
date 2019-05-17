@@ -143,6 +143,10 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
 .home-container {
   display: flex;
   flex-direction: column;

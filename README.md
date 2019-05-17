@@ -4,15 +4,19 @@ The pitch for this project ask for a multi-page site that allows the user to mak
 
 ## First Objective
 
-- [ ] Look at other designs for ispiration.
-- [ ] Draw a wireframe of the outline we want to design.
+- [/] Look at other designs for ispiration.
+- [/] Draw a wireframe of the outline we want to design.
 
 ## Second Objective
 
-- [ ] Make simple outline with small amounts of css. Heavily focus on HTML.
+- [/] Make simple outline with small amounts of css. Heavily focus on HTML.
 
 ## Third Objective
 
 - [ ] Get html lined up in less files.
 - [ ] Setup mixins, variables, color scheme, and fontsizes.
 - [ ] Create hover function for buttons
+
+## Fourth Objective
+
+- [ ] Set up java (budget calculator, supplies selectors, 'save to cart' button)
