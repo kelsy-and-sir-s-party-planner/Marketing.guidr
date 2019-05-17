@@ -4,12 +4,12 @@ The pitch for this project ask for a multi-page site that allows the user to mak
 
 ## First Objective
 
-- [/] Look at other designs for ispiration.
-- [/] Draw a wireframe of the outline we want to design.
+- [checkbox:checked] Look at other designs for ispiration.
+- [checkbox:checked] Draw a wireframe of the outline we want to design.
 
 ## Second Objective
 
-- [/] Make simple outline with small amounts of css. Heavily focus on HTML.
+- [checkbox:checked] Make simple outline with small amounts of css. Heavily focus on HTML.
 
 ## Third Objective
 
