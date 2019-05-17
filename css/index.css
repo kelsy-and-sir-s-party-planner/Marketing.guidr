@@ -143,6 +143,9 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+button {
+  font-family: 'Baloo Bhai', cursive;
+}
 body .home-container {
   display: flex;
   flex-direction: column;
@@ -204,7 +207,6 @@ body .home-container #banner img {
 }
 #mid-section {
   padding: 30px;
-  width: 1200px;
   background-color: white;
   border-radius: 10px;
   display: inline-block;
@@ -233,4 +235,27 @@ body .home-container #banner img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#party-planner {
+  background-color: white;
+  width: 80%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#party-planner .party-button .plan-party-btn {
+  background-color: lightgrey;
+  border: 1px solid grey;
+  padding: 40px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: black;
+  font-size: 40px;
+  box-shadow: 2px 3px 0 0 grey;
+  width: 100%;
 }
