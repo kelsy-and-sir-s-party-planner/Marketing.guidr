@@ -13,6 +13,6 @@ The pitch for this project ask for a multi-page site that allows the user to mak
 
 ## Third Objective
 
-- [ ] Get everything lined up in less files.
+- [ ] Get html lined up in less files.
 - [ ] Setup mixins, variables, color scheme, and fontsizes.
-- [ ]
+- [ ] Create hover function for buttons
