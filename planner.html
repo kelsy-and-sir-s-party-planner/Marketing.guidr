@@ -5,10 +5,14 @@
 <head>
     <meta charset="utf-8">
             
-    <title>About</title>
+    <title>Plan Your Party</title>
+
+    <link rel="icon" type="image/ico" href="images/icon.png">
             
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+
+    <script src="js/index.js" async></script>
             
 </head>
 
@@ -26,31 +30,36 @@
                 <a href="contact.html">Contact</a>
             </div>
         </section>
-        <section>
-            <div class="h1"><h1>Planning Your Party</h1></div>
-            <div class="button-section">
-                <button class="new-party">New Party</button>
-                <button class="load-party">Load Party</button>
-            </div> 
+        <section id="new-load-btns">
+            <div class="container">
+                <h2>Planning Your Party</h2>
+                <div class="buttons">
+                    <button class="new-party">New Party</button>
+                    <button class="load-party">Load Party</button>
+                </div>
+            </div>
         </section>
-        <section>
-                <div class="input-section">
-                    <h2>Number of Attendants</h2>
-                    <input type="text" name="attendants" placeholder="">
-                    <h2>Budget</h2>
-                    <input type="text" name="budget" placeholder="Ex: Email Address">
-                    <h2>Theme</h2>
-                    <div class=theme-dropdown>
-                        <button class="dropbtn">Select Theme</button>
-                        <div class="theme-dropdown-content">
-                            <a href="#">All</a>
-                            <a href="#">Birthday</a>
-                            <a href="#">Graduation</a>
-                            <a href="#">Halloween</a>
-                            <a href="#">Christmas</a>
-                        </div>
+        <section id="">
+            <div class="input-section">
+                <h2>Number of Attendants</h2>
+                <input type="text" name="attendants" placeholder="Ex: 23">
+                <h2>Budget (In Dollars)</h2>
+                <input type="text" name="budget" placeholder="Ex: 300">
+                <h2>Theme</h2>
+                <div class=theme-dropdown>
+                    <button class="dropbtn">Select Theme</button>
+                    <div class="theme-dropdown-content">
+                        <a href="#">All</a>
+                        <a href="#">Birthday</a>
+                        <a href="#">Graduation</a>
+                        <a href="#">Halloween</a>
+                        <a href="#">Christmas</a>
                     </div>
-                </div> 
+                </div>
+            </div> 
+            <div class="">
+
+            </div>
             </section>
         <section id="signup">
                 <h2>Sign Up To Get Updates On New Items</h2>
