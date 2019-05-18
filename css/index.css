@@ -129,6 +129,7 @@ table {
 html,
 body {
   font-family: 'Baloo Bhai', cursive;
+  min-width: 300px;
 }
 h1,
 h2,
@@ -156,10 +157,6 @@ body .home-container {
 @media (max-width: 515px) {
   body .home-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin: 0;
   }
 }
 body .home-container #banner {
@@ -175,14 +172,146 @@ body .home-container #banner {
   flex-direction: column;
   align-items: center;
 }
-body .home-container #banner h1 {
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: white;
-  margin-top: 40px;
+@media (max-width: 930px) {
+  body .home-container #banner {
+    height: 400px;
+    background-size: 100% 100%;
+  }
+}
+@media (max-width: 515px) {
+  body .home-container #banner {
+    height: 300px;
+    width: 100%;
+  }
 }
 body .home-container #banner img {
   margin-top: 20px;
-  padding: 0 750px;
+}
+@media (max-width: 930px) {
+  body .home-container #banner img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 515px) {
+  body .home-container #banner img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: -20px;
+  }
+}
+#signup {
+  background-color: white;
+  width: 80%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 2px 3px 0 0 #c9c8c8;
+}
+@media (max-width: 930px) {
+  #signup {
+    padding: 10px;
+  }
+}
+#signup h2 {
+  margin: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid lightgrey;
+}
+#signup p {
+  margin: 10px;
+  text-align: center;
+}
+#signup input {
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 0 0 #c9c8c8;
+}
+#signup button {
+  background-color: white;
+  border: 1px solid grey;
+  padding: 40px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: black;
+  font-size: 40px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 2px 3px 0 0 #c9c8c8;
+  width: 10%;
+  height: 30px;
+  font-size: 15px;
+  padding: 0;
+}
+@media (max-width: 930px) {
+  #signup button {
+    font-size: 20px;
+    width: 25%;
+  }
+}
+@media (max-width: 515px) {
+  #signup button {
+    font-size: 15px;
+    width: 30%;
+  }
+}
+#signup button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+footer {
+  background-color: white;
+  width: 80%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 2px 3px 0 0 #c9c8c8;
+  margin-bottom: 20px;
+}
+@media (max-width: 930px) {
+  footer {
+    padding-top: 20px;
+  }
+}
+footer h2 {
+  padding-bottom: 20px;
+  border-bottom: 2px solid lightgrey;
+  text-align: center;
+}
+footer .footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+  padding: 0 20px;
+}
+footer .footer-nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  color: grey;
+}
+footer .footer-nav h3 {
+  margin-top: 30px;
 }
 .nav {
   display: flex;
@@ -195,7 +324,7 @@ body .home-container #banner img {
   margin-top: 40px;
 }
 .nav a {
-  border: 1px solid black;
+  border: 1px solid #c9c8c8;
   border-radius: 0.2em;
   background-color: white;
   padding: 20px;
@@ -203,30 +332,53 @@ body .home-container #banner img {
   font-size: 4em;
   text-decoration: none;
   color: black;
-  box-shadow: 2px 3px 0 0 grey;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 2px 3px 0 0 #c9c8c8;
+}
+@media (max-width: 930px) {
+  .nav a {
+    font-size: 28px;
+  }
+}
+@media (max-width: 515px) {
+  .nav a {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+.nav a:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 #mid-section {
-  padding: 30px;
   background-color: white;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
-  display: inline-block;
-  height: 80px;
   margin-top: -80px;
   margin-bottom: 40px;
-  padding: 60px 0 100px 0;
+  padding: 60px 0 50px 0;
   width: 80%;
+  box-shadow: 2px 3px 0 0 #c9c8c8;
 }
 #mid-section .toptext-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 25%;
-  width: 50%;
+  padding: 0 30px;
 }
 #mid-section .toptext-container h2 {
   font-size: 2em;
-  padding: 0 100px;
+  padding: 0;
+  width: 100%;
+  text-align: center;
   padding-bottom: 20px;
   border-bottom: 2px solid lightgrey;
 }
@@ -235,18 +387,38 @@ body .home-container #banner img {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 #party-planner {
   background-color: white;
   width: 80%;
   padding: 20px 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  margin-bottom: 40px;
+  background-image: url("../images/disco-ball-shining.gif");
+  background-size: 80%;
+  box-shadow: 2px 3px 0 0 #c9c8c8;
+}
+#party-planner .party-button {
+  width: 60%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 930px) {
+  #party-planner .party-button {
+    background-size: 500px;
+    background-repeat: repeat-x;
+  }
 }
 #party-planner .party-button .plan-party-btn {
-  background-color: lightgrey;
+  background-color: white;
   border: 1px solid grey;
   padding: 40px;
   width: 60%;
@@ -256,6 +428,91 @@ body .home-container #banner img {
   border-radius: 10px;
   color: black;
   font-size: 40px;
-  box-shadow: 2px 3px 0 0 grey;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 2px 3px 0 0 #c9c8c8;
   width: 100%;
+}
+@media (max-width: 930px) {
+  #party-planner .party-button .plan-party-btn {
+    height: 100px;
+    font-size: 30px;
+    padding: 0;
+    padding: auto;
+  }
+}
+#party-planner .party-button .plan-party-btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+#sources {
+  background-color: white;
+  width: 80%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 2px 3px 0 0 #c9c8c8;
+  margin-bottom: 40px;
+}
+#sources .bottomtext-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+@media (max-width: 930px) {
+  #sources .bottomtext-container {
+    width: 90%;
+  }
+}
+#sources .bottomtext-container h2 {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 2px solid lightgrey;
+}
+#sources .bottomtext-container .src-btns {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+#sources .bottomtext-container .src-btns button {
+  background-color: white;
+  border: 1px solid grey;
+  padding: 40px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: black;
+  font-size: 40px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 2px 3px 0 0 #c9c8c8;
+  margin: 20px;
+  padding: 0 50px 95px 50px;
+  width: 20%;
+  height: 50px;
+  font-size: 30px;
+}
+@media (max-width: 930px) {
+  #sources .bottomtext-container .src-btns button {
+    font-size: 30px;
+    margin: 0;
+  }
+}
+#sources .bottomtext-container .src-btns button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }

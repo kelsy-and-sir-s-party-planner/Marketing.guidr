@@ -1,5 +1,5 @@
 .boxShadow(){
-   box-shadow: 2px 3px 0 0 grey;
+   box-shadow: 2px 3px 0 0 #c9c8c8;
 };
 
 .borderBottom(){
@@ -8,7 +8,7 @@
 };
 
 .buttonSetup(){
-    background-color: lightgrey;
+    background-color: white;
     border: 1px solid grey;
     padding: 40px;
     width: 60%;
@@ -18,5 +18,24 @@
     border-radius: @borderRadius;
     color: black;
     font-size: 40px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
     .boxShadow();
+}
+
+.btnHover(){
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.sectionCreater(){
+    background-color: white;
+    width: 80%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: @borderRadius;
 }

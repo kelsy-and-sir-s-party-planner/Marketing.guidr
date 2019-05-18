@@ -7,10 +7,12 @@
     justify-content: space-around;
     width: 80%;
     margin-top: 40px;
+
+    
     
     
     a {
-        border: 1px solid black;
+        border: 1px solid #c9c8c8;
         border-radius: .2em;
         background-color: white;
         padding: 20px;
@@ -18,8 +20,22 @@
         font-size: 4em;
         text-decoration: none;
         color: black;
-        
-        
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
         .boxShadow();
+
+
+        @media @tablet{
+            font-size: 28px;
+        }
+
+        @media @mobile{
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+
+    a:hover{
+        .btnHover();
     }
 }
