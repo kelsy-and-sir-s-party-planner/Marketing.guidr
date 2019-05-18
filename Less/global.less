@@ -15,6 +15,14 @@ h1, h2, h3, h4, h5 {
     font-size: 2rem;
   }
 
+  h3{
+    border: 0px;
+  }
+
+  h4{
+    font-size: 13px;
+  }
+
   button{
     font-family: 'Baloo Bhai', cursive;
   }
@@ -131,14 +139,34 @@ footer{
   .sectionCreater();
   .boxShadow();
   margin-bottom: 20px;
+  width: 30%;
+  height: 80px;
 
   @media @tablet{
-    padding-top: 20px;
+    width: 20%;
   }
 
-  h2{
-      .borderBottom();
+  @media @mobile{
+    width: 20%;
+  }
+
+  h3{
+    .borderBottom();
+      padding-top: 20px;
       text-align: center;
+      
+      @media @tablet{
+        width: 80%;
+        font-size: 13px;
+        text-align: center;
+      }
+    
+      @media @mobile{
+        width: 90%;
+        font-size: 12px;
+        text-align: center;
+      }
+
   }
 
   .footer-nav{
@@ -159,14 +187,21 @@ footer{
         text-decoration: none;
         color: grey;
 
+        @media @tablet{
+          margin: 10px;
+        }
+
       }
 
-      h3{
-          margin-top: 30px;
-      }
   }
 
   
+
+  
+}
+
+h4{
+  padding-top: 50px;
 }
 
   
