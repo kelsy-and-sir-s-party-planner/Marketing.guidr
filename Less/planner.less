@@ -30,18 +30,221 @@
             justify-content: space-evenly;
 
             button{
-                padding: 30px;
+                .buttonSetup();
+                padding: 0 30px;
                 width: auto;
                 width: 40%;
-                -webkit-transition-duration: 0.4s; /* Safari */
-                transition-duration: 0.4s;
                 
+                @media @tablet{
+                    font-size: 20px;
+                }
             }
 
             button:hover{
                 .btnHover()
             }
+
+            
         }
   
+    }
+}
+
+#new-party{
+    .sectionCreater();
+    margin-bottom: 40px;
+    .boxShadow();
+    
+    // Insert Attendants, Budgets, and theme
+    .input-section{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        .borderBottom();
+    
+
+        h2{
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        input{
+            padding: 5px;
+            border-radius: @borderRadius;
+            text-align: center;
+        }
+        .tabs{
+            width: 100%;
+            .themes{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                width: 100%;
+    
+                @media @mobile{
+                    flex-direction: column;
+                }
+    
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    color: black;
+                    border: 1px solid black;
+                    padding: 0 20px;
+                    font-size: 15px;
+                    margin-top: 10px;
+                    width: 40px;
+                    height: 30px;
+                    border-radius: 5px;
+                }
+
+                a:hover{
+                    -webkit-transition-duration: 0.4s; /* Safari */
+                    transition-duration: 0.4s;
+                    .btnHover();
+                }
+                .themes{
+                    .active-tab{
+                    background-color: black;
+                    color: white;
+                    border: 1px solid white;
+                    }
+                }
+            }
+    
+        }
+
+    }
+
+    // Selectable Tabs
+    .selection-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 80%;
+        background-color: @bg;
+        border: 1px solid black;
+        border-radius: 10px;
+
+        .selection-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            width: 200px;
+            height: 70px;
+            border: 1px solid black;
+            margin: 10px 0;
+            background-color: white;
+            border-radius: 10px;
+            .boxShadow();
+
+            .headline{
+                font-size: 15px;
+                margin: 10px 0;
+            }
+
+            .img-container{
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                border-radius: 0 0 9px 9px;
+            }
+        }
+
+        .selection-item:hover{
+            cursor: pointer;
+            border: 1px solid white;
+            background-color: black;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+
+            .headline{
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+                color: white;
+            }
+        }
+    }
+}
+
+#finalize{
+    .sectionCreater();
+    .boxShadow();
+    margin-bottom: 40px;
+    .budget-calc{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .budget-num{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calc-btn{
+            .buttonSetup();
+            width: 30%;
+            font-size: 17px;
+            height: 50px;
+            padding: 0;
+            margin-bottom: 40px;
+
+            @media @tablet{
+                font-size: 14px;
+            }
+
+            @media @mobile{
+                font-size: 10px;
+                width: 40%;
+            }
+        }
+
+        .calc-btn:hover{
+            cursor: pointer;
+            .btnHover();
+        }
+
+        .budget-num{
+            margin-bottom: 40px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .cart-save{
+            .buttonSetup();
+            width: 20%;
+            font-size: 17px;
+            height: 50px;
+            padding: 0;
+
+            @media @tablet{
+                font-size: 14px;
+            }
+
+            @media @mobile{
+                font-size: 10px;
+                width: 30%;
+            }
+        }
+
+        .cart-save:hover{
+            cursor: pointer;
+            .btnHover();
+        }
     }
 }

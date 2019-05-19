@@ -22,8 +22,6 @@
         <section id="banner">
             <img src="images/logo.png" alt="logo" class="logo">
 
-            
-
             <div class="nav">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -39,28 +37,80 @@
                 </div>
             </div>
         </section>
-        <section id="">
+        <section id="new-party">
             <div class="input-section">
                 <h2>Number of Attendants</h2>
                 <input type="text" name="attendants" placeholder="Ex: 23">
                 <h2>Budget (In Dollars)</h2>
                 <input type="text" name="budget" placeholder="Ex: 300">
-                <h2>Theme</h2>
-                <div class=theme-dropdown>
-                    <button class="dropbtn">Select Theme</button>
-                    <div class="theme-dropdown-content">
-                        <a href="#">All</a>
-                        <a href="#">Birthday</a>
-                        <a href="#">Graduation</a>
-                        <a href="#">Halloween</a>
-                        <a href="#">Christmas</a>
+                <h2>Themes</h2>
+                <div class="tabs">
+                    <div class="themes">
+                        <a data-tab="all" class="tab active-tab">All</a>
+                        <a data-tab="birthday" class="tab">Birthday</a>
+                        <a data-tab="graduation" class="tab">Graduation</a>
+                        <a data-tab="halloween" class="tab">Halloween</a>
+                        <a data-tab="christmas" class="tab">Christmas</a>
                     </div>
                 </div>
-            </div> 
-            <div class="">
+            </div>
+            <div class="selection-content">
+
+                <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Candles</div>
+                    <div class="img-container">
+                        <img src="images/candles"/>
+                    </div>
+                </div>
+
+                <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Hanging Letters</div>
+                    <div class="img-container">
+                        <img src="images/candles"/>
+                    </div>
+                </div>
+
+                <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Streamers</div>
+                    <div class="img-container">
+                        <img src="images/candles"/>
+                    </div>
+                 </div>
+
+                 <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Balloons</div>
+                    <div class="img-container">
+                        <img src="images/candles"/>
+                    </div>
+                </div>
+
+                <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Table Mats</div>
+                    <div class="img-container">
+                        <img src="images/candles"/>
+                    </div>
+                </div>
+
+                <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Party Hats</div>
+                    <div class="img-container">
+                        <img src="images/candles"/>
+                    </div>
+                </div>
+
+                    
 
             </div>
-            </section>
+        </section>
+        <section id="finalize">
+            <div class="budget-calc">
+                <button class="calc-btn">Calculate Budget</button>
+                <div class="budget-num">
+                    <p>$<p class="calculated-budget">0</p></p>
+                </div>
+                <button class="cart-save">Save To Cart</button>
+            </div>
+        </section>
         <section id="signup">
                 <h2>Sign Up To Get Updates On New Items</h2>
                 <p>Sign Up Is Free And You Can Cancel The Email Subscription Any Time</p>
