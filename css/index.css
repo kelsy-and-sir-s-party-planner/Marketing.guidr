@@ -929,3 +929,55 @@ h4 {
   color: white;
   cursor: pointer;
 }
+#shop-nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  background-color: white;
+  overflow: hidden;
+  z-index: 2;
+  position: fixed;
+  right: 25px;
+  top: 25px;
+}
+#shop-nav .shop-btn {
+  height: 60px;
+  width: 60px;
+  padding: 35px;
+  background-color: white;
+  background-image: url("../images/shop-btn.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px;
+  border: none;
+  border-left: 2px solid black;
+}
+#shop-nav .shop-btn:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 30px 1px lightgrey;
+}
+#shop-nav .shop-content {
+  width: 200px;
+  position: relative;
+}
+#shop-nav .shop-content div {
+  margin: 10px;
+}
+#shop-nav .shop-content .items-selected-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#shop-nav .shop-content .items-selected-container .items-selected {
+  margin-left: 5px;
+}
+#shop-nav .shop-content .items-cost-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#shop-nav .shop-hidden {
+  display: none;
+}
