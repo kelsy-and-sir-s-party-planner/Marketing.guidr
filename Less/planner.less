@@ -298,7 +298,12 @@
     z-index: 2;
     position: fixed;
     right: 25px;
-    top: 25px;;
+    top: 25px;
+    
+    @media @mobile{
+        display: flex;
+        flex-direction: column;
+    }
 
 
     .shop-btn{
@@ -312,6 +317,20 @@
         background-size: 60px;
         border: none;
         border-left: 2px solid black;
+
+        @media @tablet{
+            height: 30px;
+            width: 30px;
+            background-size: 25px;
+            padding: 15px;
+            background-position: center;
+            border-left: none;
+        }
+
+        @media @mobile{
+            display: flex;
+            flex-direction: column;
+        }
     }
     
     .shop-btn:hover{

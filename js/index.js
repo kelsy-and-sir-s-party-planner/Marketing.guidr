@@ -64,7 +64,6 @@ class TabLink {
   
       this.tabElement.addEventListener('click', () => {
         this.selectTab();
-        console.log('Tab Selected');
       });
   
     }
@@ -75,14 +74,12 @@ class TabLink {
 
       tabs.forEach((tab) => {
         tab.classList.remove('active-tab');
-        console.log('class removed')
       })
  
       const cards = document.querySelectorAll('.selection-item');
   
       cards.forEach(card => {
         card.style.display = 'none';
-        console.log('changed to no display');
       })
       
       this.tabElement.classList.add('active-tab');
@@ -99,7 +96,6 @@ class TabLink {
     selectCard(){
 
       this.cardElement.style.display = "flex";
-      console.log('changed to flex');
     }
   
   }
