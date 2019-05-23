@@ -74,7 +74,7 @@ class TabLink {
 
       tabs.forEach((tab) => {
         tab.classList.remove('active-tab');
-      })
+      });
  
       const cards = document.querySelectorAll('.selection-item');
   
@@ -100,4 +100,46 @@ class TabLink {
   
   }
 
-  let tabs = document.querySelectorAll('.tab').forEach((tab) => new TabLink(tab));
+let tabs = document.querySelectorAll('.tab').forEach((tab) => new TabLink(tab));
+
+class Budget{
+    constructor(budget){
+        this.budget = budget;
+
+        this.startBudget = document.querySelector(".budget");
+
+        this.endBudget = document.querySelector(".calculated-budget");
+
+        this.total = document.querySelector(".total-cost");
+
+        this.totalBtn = document.querySelector(".cart-save");
+
+        this.budgetCalc = deocument.querySelector(".calc-btn");
+
+        //Item 
+        
+
+        this.totalBtn.addEventListener('click', () => {
+            this.calculateBudget();
+        });
+
+        
+    }
+
+    calculateBudget(){
+        const items = document.querySelectorAll('.selectuib-item')
+
+      tabs.forEach((tab) => {
+        tab.classList.remove('active-tab');
+      });
+            console.log('hi');
+    }
+}
+
+let items = document.querySelectorAll('.selection-item').forEach((item) => new Budget(item));
+
+
+
+
+
+

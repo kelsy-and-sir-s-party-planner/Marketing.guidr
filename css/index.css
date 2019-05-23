@@ -844,12 +844,23 @@ h4 {
 #new-party .selection-content .selection-item .img-container {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   border-radius: 0 0 9px 9px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#new-party .selection-content .selection-item #bday-candles {
+  background-image: url("../images/birthday-candles.jpg");
+}
+#new-party .selection-content .selection-item #bday-letters {
+  background-image: url("../images/birthday-letters.jpg");
 }
 #new-party .selection-content .selection-item:hover {
   cursor: pointer;
-  border: 1px solid white;
   background-color: black;
   -webkit-transition-duration: 0.4s;
   /* Safari */
