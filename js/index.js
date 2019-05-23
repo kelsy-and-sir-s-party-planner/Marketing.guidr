@@ -106,7 +106,9 @@ class Budget{
     constructor(budget){
         this.budget = budget;
 
-        this.startBudget = document.querySelector(".budget");
+        
+
+        this.startBudget = document.getElementsByClassName(".budget");
 
         this.endBudget = document.querySelector(".calculated-budget");
 
@@ -114,29 +116,26 @@ class Budget{
 
         this.totalBtn = document.querySelector(".cart-save");
 
-        this.budgetCalc = deocument.querySelector(".calc-btn");
+        this.budgetCalc = document.querySelector(".calc-btn");
 
         //Item 
         
 
         this.totalBtn.addEventListener('click', () => {
-            this.calculateBudget();
+
+            this.calculateFinalBudget();
         });
 
         
     }
 
-    calculateBudget(){
-        const items = document.querySelectorAll('.selectuib-item')
+    calculateFinalBudget(){
+        
 
-      tabs.forEach((tab) => {
-        tab.classList.remove('active-tab');
-      });
-            console.log('hi');
+        
     }
 }
 
-let items = document.querySelectorAll('.selection-item').forEach((item) => new Budget(item));
 
 
 

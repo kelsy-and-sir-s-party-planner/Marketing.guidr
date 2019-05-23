@@ -220,6 +220,16 @@ body .home-container #banner img {
 }
 @media (max-width: 930px) {
   #signup {
+    width: 80%;
+  }
+}
+@media (max-width: 515px) {
+  #signup {
+    width: 90%;
+  }
+}
+@media (max-width: 930px) {
+  #signup {
     padding: 10px;
   }
 }
@@ -332,6 +342,16 @@ footer {
 }
 @media (max-width: 930px) {
   footer {
+    width: 80%;
+  }
+}
+@media (max-width: 515px) {
+  footer {
+    width: 90%;
+  }
+}
+@media (max-width: 930px) {
+  footer {
     width: 20%;
   }
 }
@@ -400,6 +420,16 @@ h4 {
   padding: 60px 0 50px 0;
   box-shadow: 2px 3px 0 0 #c9c8c8;
 }
+@media (max-width: 930px) {
+  #mid-section {
+    width: 80%;
+  }
+}
+@media (max-width: 515px) {
+  #mid-section {
+    width: 90%;
+  }
+}
 #mid-section .toptext-container {
   display: flex;
   flex-direction: column;
@@ -436,6 +466,16 @@ h4 {
   background-image: url("../images/disco-ball-shining.gif");
   background-size: 80%;
   box-shadow: 2px 3px 0 0 #c9c8c8;
+}
+@media (max-width: 930px) {
+  #party-planner {
+    width: 80%;
+  }
+}
+@media (max-width: 515px) {
+  #party-planner {
+    width: 90%;
+  }
 }
 #party-planner .party-button {
   width: 60%;
@@ -492,6 +532,16 @@ h4 {
   border-radius: 10px;
   box-shadow: 2px 3px 0 0 #c9c8c8;
   margin-bottom: 40px;
+}
+@media (max-width: 930px) {
+  #sources {
+    width: 80%;
+  }
+}
+@media (max-width: 515px) {
+  #sources {
+    width: 90%;
+  }
 }
 #sources .bottomtext-container {
   display: flex;
@@ -564,6 +614,16 @@ h4 {
   padding: 60px 0 50px 0;
   box-shadow: 2px 3px 0 0 #c9c8c8;
 }
+@media (max-width: 930px) {
+  #contact-mid {
+    width: 80%;
+  }
+}
+@media (max-width: 515px) {
+  #contact-mid {
+    width: 90%;
+  }
+}
 #contact-mid .contact-info {
   display: flex;
   flex-direction: column;
@@ -613,6 +673,16 @@ h4 {
   padding: 60px 0 50px 0;
   box-shadow: 2px 3px 0 0 #c9c8c8;
 }
+@media (max-width: 930px) {
+  #about-mid {
+    width: 80%;
+  }
+}
+@media (max-width: 515px) {
+  #about-mid {
+    width: 90%;
+  }
+}
 #about-mid .about-container {
   display: flex;
   flex-direction: column;
@@ -649,6 +719,16 @@ h4 {
   margin-bottom: 40px;
   padding: 60px 0 50px 0;
   box-shadow: 2px 3px 0 0 #c9c8c8;
+}
+@media (max-width: 930px) {
+  #new-load-btns {
+    width: 80%;
+  }
+}
+@media (max-width: 515px) {
+  #new-load-btns {
+    width: 90%;
+  }
 }
 #new-load-btns .container {
   display: flex;
@@ -714,6 +794,16 @@ h4 {
   border-radius: 10px;
   margin-bottom: 40px;
   box-shadow: 2px 3px 0 0 #c9c8c8;
+}
+@media (max-width: 930px) {
+  #new-party {
+    width: 80%;
+  }
+}
+@media (max-width: 515px) {
+  #new-party {
+    width: 90%;
+  }
 }
 #new-party .party-container {
   display: flex;
@@ -812,9 +902,9 @@ h4 {
   align-items: center;
   justify-content: space-around;
   width: 200px;
-  height: 70px;
+  height: 90px;
   border: 1px solid black;
-  margin: 10px 0;
+  margin: 10px 1px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 2px 3px 0 0 #c9c8c8;
@@ -822,6 +912,12 @@ h4 {
 @media (max-width: 930px) {
   #new-party .selection-content .selection-item {
     width: 30%;
+    height: 70px;
+  }
+}
+@media (max-width: 930px) {
+  #new-party .selection-content .selection-item {
+    height: 60px;
   }
 }
 #new-party .selection-content .selection-item .headline {
@@ -859,6 +955,108 @@ h4 {
 #new-party .selection-content .selection-item #bday-letters {
   background-image: url("../images/birthday-letters.jpg");
 }
+#new-party .selection-content .selection-item #bday-streamers {
+  background-image: url("../images/birthday-streamer.png");
+}
+#new-party .selection-content .selection-item #bday-balloons {
+  background-image: url("../images/birthday-balloons.jpg");
+}
+#new-party .selection-content .selection-item #bday-table-mats {
+  background-image: url("../images/bday-mat.png");
+}
+#new-party .selection-content .selection-item #bday-hats {
+  background-image: url("../images/bday-hats.jpeg");
+}
+#new-party .selection-content .selection-item #confetti {
+  background-image: url("../images/bday-confetti.jpg");
+}
+#new-party .selection-content .selection-item #silly-string {
+  background-image: url("../images/silly-string.jpg");
+}
+#new-party .selection-content .selection-item #grad-balloons {
+  background-image: url("../images/grad-balloons.jpg");
+}
+#new-party .selection-content .selection-item #grad-letters {
+  background-image: url("../images/grad-letters.jpg");
+}
+#new-party .selection-content .selection-item #grad-table-mats {
+  background-image: url("../images/grad-mats.png");
+}
+#new-party .selection-content .selection-item #skeletons {
+  background-image: url("../images/skele.jpg");
+}
+#new-party .selection-content .selection-item #witch-pot {
+  background-image: url("../images/witch-pot.jpg");
+}
+#new-party .selection-content .selection-item #fake-blood {
+  background-image: url("../images/fake-blood.webp");
+}
+#new-party .selection-content .selection-item #halloween-stickers {
+  background-image: url("../images/halloween-stickers.jpg");
+}
+#new-party .selection-content .selection-item #fog {
+  background-image: url("../images/fog.jpg");
+}
+#new-party .selection-content .selection-item #webs {
+  background-image: url("../images/cobweb.jpg");
+}
+#new-party .selection-content .selection-item #college {
+  background-image: url("../images/cash.jpg");
+}
+#new-party .selection-content .selection-item #grave {
+  background-image: url("../images/grave.jpg");
+}
+#new-party .selection-content .selection-item #witch {
+  background-image: url("../images/witch.jpg");
+}
+#new-party .selection-content .selection-item #spider {
+  background-image: url("../images/spider.jpg");
+}
+#new-party .selection-content .selection-item #demon {
+  background-image: url("../images/demon.jpg");
+}
+#new-party .selection-content .selection-item #gremlin {
+  background-image: url("../images/gremlin.jpg");
+}
+#new-party .selection-content .selection-item #zombie {
+  background-image: url("../images/zombie.jpg");
+}
+#new-party .selection-content .selection-item #beware-sign {
+  background-image: url("../images/beware.jpg");
+}
+#new-party .selection-content .selection-item #dry-ice {
+  background-image: url("../images/ice.jpg");
+}
+#new-party .selection-content .selection-item #santa {
+  background-image: url("../images/santa.jpg");
+}
+#new-party .selection-content .selection-item #russian-dolls {
+  background-image: url("../images/dolls.jpg");
+}
+#new-party .selection-content .selection-item #tri-color-lights {
+  background-image: url("../images/tri-lights.jpg");
+}
+#new-party .selection-content .selection-item #white-lights {
+  background-image: url("../images/white-lights.jpg");
+}
+#new-party .selection-content .selection-item #fake-snow {
+  background-image: url("../images/snow.jpg");
+}
+#new-party .selection-content .selection-item #elf {
+  background-image: url("../images/elf.jpg");
+}
+#new-party .selection-content .selection-item #snow-globe {
+  background-image: url("../images/snow-globe.jpg");
+}
+#new-party .selection-content .selection-item #wreath {
+  background-image: url("../images/wreath.jpg");
+}
+#new-party .selection-content .selection-item #christmas-letters {
+  background-image: url("../images/christmas-letters.png");
+}
+#new-party .selection-content .selection-item #christmas-balloons {
+  background-image: url("../images/christmas-balloons.jpg");
+}
 #new-party .selection-content .selection-item:hover {
   cursor: pointer;
   background-color: black;
@@ -886,6 +1084,16 @@ h4 {
   border-radius: 10px;
   box-shadow: 2px 3px 0 0 #c9c8c8;
   margin-bottom: 40px;
+}
+@media (max-width: 930px) {
+  #finalize {
+    width: 80%;
+  }
+}
+@media (max-width: 515px) {
+  #finalize {
+    width: 90%;
+  }
 }
 #finalize .budget-calc {
   width: 100%;
