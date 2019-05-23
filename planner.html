@@ -1,0 +1,287 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+            
+    <title>Plan Your Party</title>
+
+    <link rel="icon" type="image/ico" href="images/icon.png">
+            
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    
+            
+</head>
+
+<body>
+    
+    <script defer="defer" src="./js/index.js"></script>
+
+    <div class="home-container">
+        <section id="shop-nav">
+            <button class="shop-btn"></button>
+            <div class="shop-content shop-hidden">
+                <div class="items-selected-container">
+                    <p>Items Selected:<p class="items-selected">0</p></p>
+                </div>
+                <div class="items-cost-container">
+                    <p>Total Cost: $<p class="total-cost">0</p></p>
+                </div>
+            </div>
+        </section>
+        <section id="banner">
+                <a href="index.html"><img src="images/logo.png" alt="logo" class="logo" width="200px" height="200px"></a>
+
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </section>
+        <section id="new-load-btns">
+            <div class="container">
+                <h2>Planning Your Party</h2>
+                <div class="buttons">
+                    <button class="new-party-btn">New Party</button>
+                    <button class="load-party-btn" onclick="alert('Load Party has not been implamented yet, sorry for the inconvenience')">Load Party</button>
+                </div>
+            </div>
+        </section>
+        <section id="new-party">
+            <div class="party-container party-hidden">
+            <div class="input-section">
+                <h2>Number of Attendants</h2>
+                <input type="text" name="attendants" class="attendants" placeholder="Ex: 23">
+                <h2>Budget (In Dollars)</h2>
+                <input type="text" name="budget" class="budget" placeholder="Ex: 300">
+                <h2>Themes</h2>
+                <div class="tabs">
+                    <div class="themes">
+                        <a data-tab="all" class="tab active-tab">All</a>
+                        <a data-tab="birthday" class="tab">Birthday</a>
+                        <a data-tab="graduation" class="tab">Graduation</a>
+                        <a data-tab="halloween" class="tab">Halloween</a>
+                        <a data-tab="christmas" class="tab">Christmas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="selection-content">
+
+                <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Candles</div>
+                    <div class="img-container" id="bday-candles"></div>
+                </div>
+
+                <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Hanging Letters</div>
+                    <div class="img-container" id="bday-letters"></div>
+                </div>
+
+                <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Streamers</div>
+                    <div class="img-container" id="bday-streamers"></div>
+                 </div>
+
+                 <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Balloons</div>
+                    <div class="img-container" id="bday-balloons"></div>
+                </div>
+
+                <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Table Mats</div>
+                    <div class="img-container" id="bday-table-mats"></div>
+                </div>
+
+                <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Party Hats</div>
+                    <div class="img-container" id="bday-hats"></div>
+                </div>
+
+                <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Confetti</div>
+                    <div class="img-container" id="confetti"></div>
+                </div>
+
+                <div class="selection-item" data-tab="birthday">
+                    <div class="headline">Silly String</div>
+                    <div class="img-container" id="silly-string"></div>
+                </div>
+
+                <div class="selection-item" data-tab="graduation">
+                    <div class="headline">Balloons</div>
+                    <div class="img-container" id="grad-balloons"></div>
+                </div>
+
+                <div class="selection-item" data-tab="graduation">
+                    <div class="headline">Hanging Letters</div>
+                    <div class="img-container" id="grad-letters"></div>
+                </div>
+
+                <div class="selection-item" data-tab="graduation">
+                    <div class="headline">Table Mats</div>
+                    <div class="img-container" id="grad-table-mats"></div>
+                </div>
+
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Skeletons</div>
+                    <div class="img-container" id="skeletons"></div>
+                </div>
+
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Witch's Pot</div>
+                    <div class="img-container" id="witch-pot"></div>
+                </div>
+
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Fake Blood</div>
+                    <div class="img-container" id="fake-blood"></div>
+                </div>
+
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Stickers</div>
+                    <div class="img-container" id="halloween-stickers"></div>
+                </div>
+
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Fog Machine</div>
+                    <div class="img-container" id="fog"></div>
+                </div>
+
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Cob Webs</div>
+                    <div class="img-container" id="webs"></div>
+                </div>
+
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">College Debt</div>
+                    <div class="img-container" id="college"></div>
+                </div>
+
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Grave</div>
+                    <div class="img-container" id="grave"></div>
+                </div>
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Witch</div>
+                    <div class="img-container" id="witch"></div>
+                </div>
+
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Spider</div>
+                    <div class="img-container" id="spider"></div>
+                </div>
+
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Demon</div>
+                    <div class="img-container" id="demon"></div>
+                </div>
+
+                   <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Gremlin</div>
+                    <div class="img-container" id="gremlin"></div>
+                </div>
+                
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Zombie</div>
+                    <div class="img-container" id="zombie"></div>
+                </div>
+
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Beware Sign</div>
+                    <div class="img-container" id="beware-sign"></div>
+                </div>
+
+                <div class="selection-item" data-tab="halloween">
+                    <div class="headline">Dry Ice</div>
+                    <div class="img-container" id="dry-ice"></div>
+                </div>
+
+                <div class="selection-item" data-tab="christmas">
+                    <div class="headline">Santa</div>
+                    <div class="img-container" id="santa"></div>
+                </div>
+
+                <div class="selection-item" data-tab="christmas">
+                    <div class="headline">Russian Dolls</div>
+                    <div class="img-container" id="russian-dolls"></div>
+                </div>
+
+                <div class="selection-item" data-tab="christmas">
+                    <div class="headline">White Lights</div>
+                    <div class="img-container" id="white-lights"></div>
+                </div>
+
+                <div class="selection-item" data-tab="christmas">
+                    <div class="headline">Tri-Colored Lights</div>
+                    <div class="img-container" id="tri-color-lights"></div>
+                </div>
+
+                <div class="selection-item" data-tab="christmas">
+                    <div class="headline">Fake Snow</div>
+                    <div class="img-container" id="fake-snow"></div>
+                </div>
+
+                <div class="selection-item" data-tab="christmas">
+                    <div class="headline">Elf On A Shelf</div>
+                    <div class="img-container" id="elf"></div>
+                </div>
+
+                <div class="selection-item" data-tab="christmas">
+                    <div class="headline">Snow Globe</div>
+                    <div class="img-container" id="snow-globe"></div>
+                </div>
+                
+                <div class="selection-item" data-tab="christmas">
+                    <div class="headline">Wreath</div>
+                    <div class="img-container" id="wreath"></div>
+                </div>
+
+                <div class="selection-item" data-tab="christmas">
+                    <div class="headline">Hanging Letters</div>
+                    <div class="img-container" id="christmas-letters"></div>
+                </div>
+
+                <div class="selection-item" data-tab="christmas">
+                    <div class="headline">Balloons</div>
+                    <div class="img-container" id="christmas-balloons"></div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <section id="finalize">
+            <div class="budget-calc">
+                <button class="calc-btn">Calculate Budget Left</button>
+                <div class="budget-num">
+                    <p>$<p class="calculated-budget">0</p></p>
+                </div>
+                <button class="cart-save">Save To Cart</button>
+            </div>
+        </section>
+        <section id="signup">
+                <h2>Sign Up To Get Updates On New Items</h2>
+                <p>Sign Up Is Free And You Can Cancel The Email Subscription Any Time</p>
+                <input type="text" name="email" placeholder="Email Address">
+                <button onclick="alert('You will now be sent emails about any new products')">Sign Up</button>
+            </section>
+    
+            
+            <footer>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <h3>Share With Your Friends</h3>
+                <div class="footer-nav">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                </div>
+            </footer>
+            <h4>©Sir Williams</h4>
+            
+            
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,134 @@
+#mid-section {
+    .sectionCreater();
+    margin-top: -80px;
+    margin-bottom: 40px;
+    padding: 60px 0 50px 0;
+    .boxShadow();
+
+    
+  
+    .toptext-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 30px;
+      width: 50%;
+
+      h2{
+        font-size: 2em;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        .borderBottom();
+      }
+
+      p{
+          padding-top: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+      }
+
+    }
+}
+
+
+#party-planner{
+    .sectionCreater();
+    margin-bottom: 40px;
+    background-image: url("../images/disco-ball-shining.gif");
+    background-size: 80%;
+    .boxShadow();
+    .party-button {
+        width: 60%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media @tablet{
+            background-size: 500px;
+            background-repeat: repeat-x;
+        }
+
+        
+
+        .plan-party-btn{
+            .buttonSetup();
+            width: 100%;
+
+            @media @tablet{
+                height: 100px;
+                font-size: 30px;
+                padding: 0;
+                padding: auto;
+            }
+            
+        }
+        .plan-party-btn:hover{
+            .btnHover();
+        }
+    }
+}
+
+#sources{
+    .sectionCreater();
+    .boxShadow();
+    margin-bottom: 40px;
+    
+    
+    .bottomtext-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80%;
+        
+
+        @media @tablet{
+            width: 90%;
+        }
+        
+        h2{
+            text-align: center;
+            width: 100%;
+            .borderBottom();
+        }
+
+        .src-btns{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding-top: 20px;
+
+            @media @tablet{
+
+
+            }
+            button{
+                .buttonSetup();
+                margin: 20px;
+                padding: 0 50px 95px 50px;
+                width: 20%;
+                height: 50px;
+                font-size: 30px;
+
+                @media @tablet{
+                    font-size: 30px;
+                    margin: 0;
+                }
+            }
+
+            button:hover{
+                .btnHover();
+            }
+        }
+    }
+}
+
+
+
