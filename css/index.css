@@ -1197,7 +1197,7 @@ h4 {
   z-index: 2;
   position: fixed;
   right: 25px;
-  top: 25px;
+  top: 100px;
 }
 @media (max-width: 515px) {
   #shop-nav {
@@ -1259,4 +1259,50 @@ h4 {
 }
 #shop-nav .shop-hidden {
   display: none;
+}
+#sign-in {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: white;
+  overflow: hidden;
+  z-index: 2;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+}
+@media (max-width: 515px) {
+  #sign-in {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#sign-in .sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+#sign-in button {
+  border-radius: 5px;
+  background-color: white;
+}
+#sign-in input {
+  padding-left: 5px;
+  width: 100px;
+  margin-right: 5px;
+}
+#sign-in p {
+  padding-left: 3px;
+}
+#sign-in .welcome-hidden {
+  display: none;
+}
+#sign-in #password {
+  display: flex;
+}
+#sign-in #username {
+  display: flex;
 }
