@@ -1,4 +1,3 @@
-
 class ShopDropDown{
     constructor(element){
 
@@ -20,30 +19,80 @@ class ShopDropDown{
 
 }
       
-let shopdropdowns = document.querySelectorAll('#shop-nav').forEach( shopdropdown => new ShopDropDown(shopdropdown));
+let shopdropdowns = document.querySelectorAll('#shop-nav').forEach(shopdropdown => new ShopDropDown(shopdropdown));
+    
+class SignIn{
+  constructor(information){
+
+    this.information = information;
+
+    this.signInBtn = this.information.querySelector(".sign-in-btn");
+    this.welcome = this.information.querySelector(".welcome");
+    this.newPerson = this.information.querySelector(".person");
+    
+      
+
+    this.signInBtn.addEventListener('click', () => {
+      this.welcomeName();
+    });
+
+  }
+
+  welcomeName() {
+    var userNameInfo = document.getElementById("username").value;
+    var newPersonTextSet = document.querySelector(".person");
+    var passwordInfo = document.getElementById("password").value;
+    var username = document.querySelector("#username");
+    var password = document.querySelector("#password");
+    
+
+    this.newPerson = userNameInfo;
+    newPersonTextSet.textContent = `"${userNameInfo}"`;
+
+    if(passwordInfo === 'password'){
+      username.style.display = "none";
+      password.style.display = "none";
+      this.signInBtn.style.display = "none";
+      this.welcome.style.display = "flex";
+    }else{
+      alert('try using "password"');
+    }
+
+   
+  }
+}
+
+
+
+let signins = document.querySelectorAll('#sign-in').forEach(signin => new SignIn(signin));
 
 class NewParty {
-    constructor(element) {
+  constructor(element) {
       
-      this.element = element;
+    this.element = element;
       
-      this.button = document.querySelector('.new-party-btn');
+    this.button = document.querySelector('.new-party-btn');
       
-      this.content = document.querySelector('.party-container');
+    this.content = document.querySelector('.party-container');
       
-      this.button.addEventListener('click', () => {
-        this.toggleContent();
-      })
-    }
-  
-    toggleContent() {
-    
-        this.content.classList.toggle('#new-party');
-        this.content.classList.toggle('party-hidden');
-    }
+    this.button.addEventListener('click', () => {
+      this.toggleContent();
+    })
   }
   
-  let newpartys = document.querySelectorAll('#new-party').forEach( newparty => new NewParty(newparty));
+  toggleContent() {
+    
+    this.content.classList.toggle('#new-party');
+    this.content.classList.toggle('party-hidden');
+  }
+}
+  
+  let newpartys = document.querySelectorAll('#new-party').forEach(newparty => new NewParty(newparty));
+
+
+  
+  
+  
 
 class TabLink {
     constructor(tabElement){
@@ -52,6 +101,8 @@ class TabLink {
        
       this.tabData = this.tabElement.dataset.tab;
       
+
+      // Select Tab If/Else
       if(this.tabData === 'all'){
         
         this.cards = document.querySelectorAll('.selection-item');
@@ -101,6 +152,10 @@ class TabLink {
   }
 
 let tabs = document.querySelectorAll('.tab').forEach((tab) => new TabLink(tab));
+
+
+
+
 
 class Budget{
     constructor(budget){
